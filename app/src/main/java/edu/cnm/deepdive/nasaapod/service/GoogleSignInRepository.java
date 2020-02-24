@@ -71,7 +71,7 @@ public class GoogleSignInRepository {
     return task;
   }
 
-  public Task<Void> signout() {
+  public Task<Void> signOut() {
     return client.signOut()
         .addOnCompleteListener( (account) -> update( (GoogleSignInAccount) null ) );
   }
