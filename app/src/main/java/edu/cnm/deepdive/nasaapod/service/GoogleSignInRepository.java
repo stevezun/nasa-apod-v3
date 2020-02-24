@@ -43,7 +43,7 @@ public class GoogleSignInRepository {
   public static GoogleSignInRepository getInstance() {
     return InstanceHolder.INSTANCE;
   }
-  
+
   public LiveData<Throwable> getThrowable() {
     return throwable;
   }
